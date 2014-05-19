@@ -1,74 +1,114 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   
-  <title>hexo配置说明 | SpringZ&#39;s Website</title>
-  <meta name="author" content="SpringZ">
-  
-  <meta name="description" content="专心的做一件事，并把它做好">
-  
-  
+  <title>使用hexo和github来构建自己的blog | SpringZ&#39;s Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="article" property="og:type">
+<meta content="使用hexo和github来构建自己的blog" property="og:title">
+<meta content="http://pppigboat.github.io/2014/05/19/hexo配置说明/" property="og:url">
+<meta property="og:image">
+<meta content="SpringZ's Website" property="og:site_name">
+<meta content="基本步骤
+1 安装hexo2 申请配置github仓库3 申请并绑定域名(可选)
+安装hexo
+1,安装nodejs
+从nodejs网站上下载node.pkg
+2,安装Hexo
+1
+~$sudo npm install -g hexo
 
-  <meta property="og:title" content="hexo配置说明"/>
-  <meta property="og:site_name" content="SpringZ&#39;s Website"/>
 
+
+3,准备网站目录并使用hexo进行初始化
+在本地机器上准备一个文件目录，例如：~/MyBlogs将执行目录切换到该目录下并执行初始化命令
+1
+~/MyBlog" property="og:description">
+<meta content="summary" name="twitter:card">
   
-    <meta property="og:image" content="undefined"/>
+    <link rel="alternative" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
   
-
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
 </head>
-
-
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">SpringZ&#39;s Website</a></h1>
-  <h2><a href="/">淡泊以明志</a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">SpringZ&#39;s Website</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">淡泊以明志</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://pppigboat.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hexo配置说明" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/05/19/hexo配置说明/" class="article-date">
+  <time datetime="2014-05-19T08:41:52.000Z" itemprop="datePublished">May 19 2014</time>
+</a>
     
-      <li><a href="/">Home</a></li>
+  </div>
+  <div class="article-inner">
     
-      <li><a href="/archives">Archives</a></li>
     
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div></header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+      <header class="article-header">
+        
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-05-19T08:41:52.000Z"><a href="/2014/05/19/hexo配置说明/">May 19 2014</a></time>
-      
-      
-  
-    <h1 class="title">hexo配置说明</h1>
+    <h1 class="article-title" itemprop="name">
+      使用hexo和github来构建自己的blog
+    </h1>
   
 
-    </header>
-    <div class="entry">
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1,安装nodejs">1,安装nodejs</h2>
+        <h2 id="基本步骤">基本步骤</h2>
+<p>1 安装hexo<br>2 申请配置github仓库<br>3 申请并绑定域名(可选)</p>
+<h2 id="安装hexo">安装hexo</h2>
+<h3 id="1,安装nodejs">1,安装nodejs</h3>
 <p>从nodejs网站上下载node.pkg</p>
-<h2 id="2,安装Hexo">2,安装Hexo</h2>
-<p>安装Hexo</p>
+<h3 id="2,安装Hexo">2,安装Hexo</h3>
 <figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>~<span class="variable">$sudo</span> npm install <span class="attribute">-g</span> hexo
 </pre></td></tr></table></figure>
 
 
-<h2 id="3,准备网站目录并使用hexo进行初始化">3,准备网站目录并使用hexo进行初始化</h2>
+<h3 id="3,准备网站目录并使用hexo进行初始化">3,准备网站目录并使用hexo进行初始化</h3>
 <p>在本地机器上准备一个文件目录，例如：~/MyBlogs<br>将执行目录切换到该目录下并执行初始化命令</p>
 <figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> init
@@ -76,14 +116,14 @@
 
 
 <p>此时，该目录为hexo的执行目录，并自动建立一个hellowolrd.md文件</p>
-<h2 id="4,生成helloworld博客">4,生成helloworld博客</h2>
+<h3 id="4,生成helloworld博客">4,生成helloworld博客</h3>
 <p>在hexo的工作目录下执行博客生成命令</p>
 <figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> g
 </pre></td></tr></table></figure>
 
 
-<h2 id="5,博客预览">5,博客预览</h2>
+<h3 id="5,博客预览">5,博客预览</h3>
 <p>在hexo的工作目录下执行服务器运行命令</p>
 <figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> s
@@ -91,16 +131,17 @@
 
 
 <p>此时，在浏览其中输入<a href="http://localhost:4000" target="_blank">http://localhost:4000</a> 即可看到博客预览</p>
-<h2 id="6,添加新文件">6,添加新文件</h2>
+<h3 id="6,添加新文件">6,添加新文件</h3>
 <p>在hexo的工作目录下执行服务器运行命令</p>
 <figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> <span class="keyword">new</span> myfilename
 </pre></td></tr></table></figure>
 
 
-<p>则在目录~/MyBlogs/source/_posts下生成名为myfilename的文件。编辑该文件即可。</p>
-<h2 id="7,添加主题">7,添加主题</h2>
+<p>则在目录~/MyBlogs/source/_posts下生成名为myfilename.md的文件。编辑该文件即可。</p>
+<h3 id="7,添加主题">7,添加主题</h3>
 <p><a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">https://github.com/tommy351/hexo/wiki/Themes</a><br>目录下列出了各种主题及安装方法，安装后，更改_config.yml文件中的theme选项值(注意”:”后有一个半角空格)。</p>
+<h2 id="附录1：hexo主题">附录1：hexo主题</h2>
 <table>
 <thead>
 <tr>
@@ -319,104 +360,111 @@
 
       
     </div>
-    <footer>
+    <footer class="article-footer">
+      <a data-url="http://pppigboat.github.io/2014/05/19/hexo配置说明/" data-id="acp35j2ih3pgnv78" class="article-share-link">Share</a>
       
-        
-        
-  
-  <div class="tags">
-    <a href="/tags/hexo 配置/">hexo 配置</a>
-  </div>
-
-        
-  <div class="addthis addthis_toolbox addthis_default_style">
-    
-      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-    
-    
-      <a class="addthis_button_tweet"></a>
-    
-    
-      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    
-    
-      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
-    
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
-
       
-      <div class="clearfix"></div>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo 配置/">hexo 配置</a></li></ul>
+
     </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2014/05/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
-
-<section id="comment">
-  <h1 class="title">Comments</h1>
-
-  
-      <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<div class="fb-comments" data-href="http://pppigboat.github.io/2014/05/19/hexo配置说明/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
-      
-  
 </section>
-
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:pppigboat.github.io">
-  </form>
-</div>
-
+        
+          <aside id="sidebar">
   
-
+    
   
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/hexo 配置/">hexo 配置</a><small>1</small></li>
-  
-  </ul>
-</div>
-
-</aside>
-    <div class="clearfix"></div>
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo 配置/">hexo 配置</a><span class="tag-list-count">1</span></li></ul>
+    </div>
   </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2014 SpringZ
-  
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
 
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo 配置/" style="font-size: NaNpx;">hexo 配置</a>
+    </div>
+  </div>
 
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05">May 2014</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/05/19/hexo配置说明/">使用hexo和github来构建自己的blog</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/19/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 SpringZ<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
 
+
+<script type="text/javascript" src="/js/script.js"></script>
+  </div>
 </body>
 </html>
