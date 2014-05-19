@@ -9,60 +9,87 @@
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation to learn how to use.">
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
   <meta property="og:title" content="Hello World"/>
   <meta property="og:site_name" content="SpringZ&#39;s Website"/>
 
-  
-    <meta property="og:image" content="undefined"/>
-  
-
-  <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $('#sidebar').delay(400).animate({ width: '285px' }, 500, function() {
-      $('.personal-info').css({display: 'table'}).hide().fadeIn(500);
-    });
-  });
-  </script>
   
 </head>
 
-
 <body>
-  <header id="header" class="inner"><!-- <div class="alignleft">
-  <h1><a href="/">SpringZ&#39;s Website</a></h1>
-  <h2><a href="/">淡泊以明志</a></h2>
+  <header id="header" class="inner"><div class="alignleft">
+  <!--<h1><a href="/">SpringZ&#39;s Website</a></h1>-->
+
+  <div id="contenedor">
+  <ul class="cube">
+    <li class="cara"></li>
+    <li class="cara"></li>
+    <li class="cara"></li>
+    <li class="cara"></li>
+    <li class="cara"></li>
+	  <li class="cara">
+      <iframe src="/imgs/11zhexo.svg" width="100px" height="100px">
+      </iframe>
+    </li>
+  </ul>
 </div>
- --><!-- <nav id="main-nav" class="alignright">
+
+<script type="text/javascript">
+	$(function(){
+
+		var cube = $('.cube'),
+				offset = $('#contenedor').offset(),
+				offsetleft = (offset.left + 100),
+				offsettop = (offset.top + 100);
+
+		cube.on({
+			mousemove: function(e) {
+				$(this).css('transform','rotateX(' + (e.pageY - offsettop) + 'deg) rotateY(' + (e.pageX - offsetleft) + 'deg)');
+				$(this).addClass('noanimar').removeClass('animar');
+			},
+			mouseout: function() {
+				$(this).css('transform','rotateX(0deg) rotateY(0deg)');
+				$(this).addClass('animar').removeClass('noanimar');
+			}
+		});
+
+		//console.log('x=' + offsetleft + ', y=' + offsettop);
+});
+</script>
+<script src="/js/prefixfree.min.js"></script>
+
+</div>
+<nav id="main-nav" class="alignright">
   <ul>
     
-      <li><a href="/">Home</a></li>
+      <a href="/"><li>Home</li></a>
     
-      <li><a href="/archives">Archives</a></li>
+      <a href="/archives"><li>Archives</li></a>
     
   </ul>
   <div class="clearfix"></div>
 </nav>
- --></header>
+
+
+<div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignright"><div id="wrapper"><article class="page">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="page">
   
   <div class="post-content">
     <header>
       
       
   
-    <h1 class="depth title">Hello World</h1>
+    <h1 class="title">Hello World</h1>
   
 
     </header>
-    <div class="entry depth">
+    <div class="entry">
       
         <p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.</p>
 
@@ -88,7 +115,7 @@
     
     <a class="addthis_counter addthis_pill_style"></a>
   </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js"></script>
 
       
       <div class="clearfix"></div>
@@ -97,61 +124,34 @@
 </article>
 
 </div></div>
-    <aside id="sidebar" class="alignleft"><!-- 
-  
-
-  
-
-  
-<div class="widget twitter">
-  <h3 class="title">Tweets</h3>
-  <ul id="tweets"></ul>
+    <aside id="sidebar" class="alignright">
+<div class="search">
+  <form action="http://google.com/search" method="get" accept-charset="utf-8">
+    <input type="text" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
 </div>
 
-<script type="text/javascript">
-var twitter_stream = ['thiagopnts', 5, false];
-var moment_js_path = '/js/moment.min.js';
-</script>
-<script src="/js/twitter.js"></script>
 
 
- -->
-<div class="personal-info">
-  <figure>
-    
-      <a href="/">
-        <img class="personal-photo" src="https://2.gravatar.com/avatar/dfdcc7fdb4b631ae9c30acd5ac6c2cbe?r=x&s=440" alt="SpringZ">
-      </a>
-    
-    <figcaption>
-      <h3 class=>SpringZ</h3>
-      <p>Something about you here</p>
-    </figcaption>
-  </figure>
-  <section class="social">
-    
-      <a target="_blank" class="icon twitter depth" href="http://twitter.com/thiagopnts"></a>
-    
-    
-      <a target="_blank" class="icon facebook depth" href="http://fb.com/your facebook url"></a> 
-    
-    
-      <a target="_blank" class="icon github depth" href="http://github.com/thiagopnts"></a>
-    
-    
-      <a target="_blank" class="icon email depth" href="mailto:email"></a>
-    
-  </section>
-</div>
+
+
+
 </aside>
     <div class="clearfix"></div>
   </div>
-  <footer id="footer" class="inner"><div class="alignright depth">
-  <a href="http://github.com/thiagopnts/hexo-persona-dark" style="text-decoration: underline;">Persona Dark Theme</a> 
-  &copy; - 2014 SpringZ
+  <footer id="footer" class="inner"><div class="alignleft">
   
+  &copy; 2014 SpringZ
+  
+  <br />
+  Powered by <a href="http://zespia.tw/hexo/">Hexo</a>
 </div>
-<div class="clearfix"></div></footer>
+<div class="alignright license">
+<img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /> 本站作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">知识共享署名-非商业性使用-相同方式共享 3.0 未本地化版本许可协议</a>进行许可。
+</div>
+<div class="clearfix"></div>
+</footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
