@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo的安装和使用(on MAC OSX) | SpringZ&#39;s Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="article" property="og:type">
+<meta content="Hexo的安装和使用(on MAC OSX)" property="og:title">
+<meta content="http://yoursite.com/2014/05/18/test000/" property="og:url">
+<meta property="og:image">
+<meta content="SpringZ's Website" property="og:site_name">
+<meta content="安装nodejs
+从nodejs网站上下载node.pkg
+安装Hexo
+安装Hexo
+1
+    ~$sudo npm install -g hexo
+
+
+
+准备网站目录并使用hexo进行初始化
+在本地机器上准备一个文件目录，例如：~/MyBlogs将执行目录切换到该目录下并执行初始化命令
+1
+    ~/MyBlogs$hexo init
+
+
+
+此时，该目录为hexo的执行目录，并自动建立一个" property="og:description">
+<meta content="summary" name="twitter:card">
+  
+    <link rel="alternative" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">SpringZ&#39;s Website</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">淡泊以明志</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-test000" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/05/18/test000/" class="article-date">
+  <time datetime="2014-05-18T09:22:13.000Z" itemprop="datePublished">May 18 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo的安装和使用(on MAC OSX)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="安装nodejs">安装nodejs</h2>
+<p>从nodejs网站上下载node.pkg</p>
+<h2 id="安装Hexo">安装Hexo</h2>
+<p>安装Hexo</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    ~<span class="variable">$sudo</span> npm install <span class="attribute">-g</span> hexo
+</pre></td></tr></table></figure>
+
+
+<h2 id="准备网站目录并使用hexo进行初始化">准备网站目录并使用hexo进行初始化</h2>
+<p>在本地机器上准备一个文件目录，例如：~/MyBlogs<br>将执行目录切换到该目录下并执行初始化命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    ~/MyBlogs<span class="variable">$hexo</span> init
+</pre></td></tr></table></figure>
+
+
+<p>此时，该目录为hexo的执行目录，并自动建立一个hellowolrd.md文件</p>
+<h2 id="生成helloworld博客">生成helloworld博客</h2>
+<p>在hexo的工作目录下执行博客生成命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    ~/MyBlogs<span class="variable">$hexo</span> g
+</pre></td></tr></table></figure>
+
+
+<h2 id="博客预览">博客预览</h2>
+<p>在hexo的工作目录下执行服务器运行命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>   ~/MyBlogs<span class="variable">$hexo</span> s
+</pre></td></tr></table></figure>
+
+
+<p>此时，在浏览其中输入<a href="http://localhost:4000" target="_blank">http://localhost:4000</a> 即可看到博客预览</p>
+<h2 id="添加新文件">添加新文件</h2>
+<p>在hexo的工作目录下执行服务器运行命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>    ~/MyBlogs<span class="variable">$hexo</span> <span class="keyword">new</span> myfilename
+</pre></td></tr></table></figure>
+
+
+<p>则在目录~/MyBlogs/source/_posts下生成名为myfilename的文件。编辑该文件即可。</p>
+<h2 id="添加主题">添加主题</h2>
+<p><a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">https://github.com/tommy351/hexo/wiki/Themes</a><br>目录下列出了各种主题及安装方法，安装后，在_config.yml文件中更改相应的主题文件。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/05/18/test000/" data-id="8ufojr38zv003r1c" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/05/19/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05">May 2014</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/05/19/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2014/05/18/test000/">Hexo的安装和使用(on MAC OSX)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2014 SpringZ<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript" src="/js/script.js"></script>
+  </div>
+</body>
+</html>
