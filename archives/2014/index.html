@@ -2,135 +2,82 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
   <title>Archives: 2014 | SpringZ&#39;s Website</title>
-  <meta name="author" content="SpringZ">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="SpringZ">
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+  <meta content="website" property="og:type">
+<meta content="SpringZ's Website" property="og:title">
+<meta content="http://pppigboat.github.io/archives/2014/" property="og:url">
+<meta property="og:image">
+<meta content="SpringZ's Website" property="og:site_name">
+<meta content="专心的做一件事，并把它做好" property="og:description">
+<meta content="summary" name="twitter:card">
   
-  <meta property="og:site_name" content="SpringZ&#39;s Website"/>
-
+    <link rel="alternate" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
   
-    <meta property="og:image" content="undefined"/>
   
-
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
-  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
   
 </head>
 
-
 <body>
-        <script type="text/javascript">
-        /**
-         * 回到页面顶部
-         * @param acceleration 加速度
-         * @param time 时间间隔 (毫秒)
-         **/
-        function goTop(acceleration, time) {
-            acceleration = acceleration || 0.1;
-            time = time || 16;
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">SpringZ&#39;s Website</a></h1>
+    <p><a href="/">淡泊以明志</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content">
 
-            var x1 = 0;
-            var y1 = 0;
-            var x2 = 0;
-            var y2 = 0;
-            var x3 = 0;
-            var y3 = 0;
 
-            if (document.documentElement) {
-                x1 = document.documentElement.scrollLeft || 0;
-                y1 = document.documentElement.scrollTop || 0;
-            }
-            if (document.body) {
-                x2 = document.body.scrollLeft || 0;
-                y2 = document.body.scrollTop || 0;
-            }
-            var x3 = window.scrollX || 0;
-            var y3 = window.scrollY || 0;
+<h2 class="archives-title"><span>2014</span></h2>
 
-            // 滚动条到页面顶部的水平距离
-            var x = Math.max(x1, Math.max(x2, x3));
-            // 滚动条到页面顶部的垂直距离
-            var y = Math.max(y1, Math.max(y2, y3));
-
-            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
-            var speed = 1 + acceleration;
-            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
-
-            // 如果距离不为零, 继续调用迭代本函数
-            if(x > 0 || y > 0) {
-                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
-                window.setTimeout(invokeFunction, time);
-            }
-        }
-    </script>
-    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
-        <header>
-            <div class="wrapper">
-                <div class="center">
-                    <div class="searchBox"></div>
-                    <div class="headerMenu">
-                        <ul>
-                            
-                            <li><a href="/">Home</a></li>
-                            
-                            <li><a href="/archives">Archives</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="socnets">
-                        
-                        
-                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
-                        
-                        <a href="mailto:zhangquan03@gmail.com"><i class="foundicon-chat"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="main">
-                        <div class="brand">
-                <div class="wide">
-                    <div class="center">
-                        <h1>
-                            <a href="/">SpringZ&#39;s Website</a>
-                        </h1>
-                        <p>
-                            淡泊以明志
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
 
 
   
-    <div class="wide">
-    <div class="center">
-        <div class="head">
-            <div class="timeLine">
-                <time datetime="2014-05-19T08:41:52.000Z" class="date">
-                    <a href="/2014/05/19/hexo配置说明/">May 19 2014</a>
-                </time>
-            </div>
-        </div>
-        
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2014/05/19/hexo配置说明/">
+  <time datetime="2014-05-19T08:41:52.000Z">
+    May 19 2014
+  </time>
+</a>
+    
+    
   
-    <h2 class="title"><a href="/2014/05/19/hexo配置说明/">hexo配置说明</a></h1>
+    <h1 class="title"><a href="/2014/05/19/hexo配置说明/">hexo配置说明</a></h1>
   
 
-        <div class="entry">
-        
-          <h2 id="安装nodejs">安装nodejs</h2>
+  </header>
+  
+  <div class="entry">
+    
+      <h2 id="安装nodejs">安装nodejs</h2>
 <p>从nodejs网站上下载node.pkg</p>
 <h2 id="安装Hexo">安装Hexo</h2>
 <p>安装Hexo</p>
@@ -388,53 +335,76 @@
 </tbody>
 </table>
 
-        
-        
-          
-        
-        </div>
-    </div>
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2014/05/19/hello-world/">
+  <time datetime="2014-05-19T01:20:14.000Z">
+    May 19 2014
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2014/05/19/hello-world/">Hello World</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+
 </div>
-                
+  </div>
+  <footer id="footer"><div class="copyright">
   
-    <div class="wide">
-    <div class="center">
-        <div class="head">
-            <div class="timeLine">
-                <time datetime="2014-05-19T01:20:14.000Z" class="date">
-                    <a href="/2014/05/19/hello-world/">May 19 2014</a>
-                </time>
-            </div>
-        </div>
-        
+  &copy; 2014 <a href="/">SpringZ</a>
   
-    <h2 class="title"><a href="/2014/05/19/hello-world/">Hello World</a></h1>
-  
-
-        <div class="entry">
-        
-          <p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.</p>
-
-        
-        
-          
-        
-        </div>
-    </div>
 </div>
-                
-  
-
-                  
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
 </div>
-        </div>
-
-  <footer>
-  
-  &copy; 2014 SpringZ
-  
-</footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
 
@@ -443,9 +413,9 @@
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
 </script>
 
 </body>
