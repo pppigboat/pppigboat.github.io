@@ -22,24 +22,16 @@
   <link rel="alternate" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-  <script>
-  $(document).ready(function() {
-    $('#sidebar').delay(400).animate({ width: '285px' }, 500, function() {
-      $('.personal-info').css({display: 'table'}).hide().fadeIn(500);
-    });
-  });
-  </script>
   
 </head>
 
 
 <body>
-  <header id="header" class="inner"><!-- <div class="alignleft">
+  <header id="header" class="inner"><div class="alignleft">
   <h1><a href="/">SpringZ&#39;s Website</a></h1>
   <h2><a href="/">淡泊以明志</a></h2>
 </div>
- --><!-- <nav id="main-nav" class="alignright">
+<nav id="main-nav" class="alignright">
   <ul>
     
       <li><a href="/">Home</a></li>
@@ -49,35 +41,23 @@
   </ul>
   <div class="clearfix"></div>
 </nav>
- --></header>
+<div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignright"><div id="wrapper"><article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
       
-        <div class="icon depth"></div>
-        <time class="depth" datetime="2014-05-19T01:20:14.000Z"><a href="/2014/05/19/hello-world/">May 19 2014</a></time>
+        <div class="icon"></div>
+        <time datetime="2014-05-19T01:20:14.000Z"><a href="/2014/05/19/hello-world/">May 19 2014</a></time>
       
       
   
-    <h1 class="depth title">Hello World</h1>
+    <h1 class="title">Hello World</h1>
   
 
     </header>
-    <div class="entry depth">
+    <div class="entry">
       
         <p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.</p>
 
@@ -111,59 +91,50 @@
   </div>
 </article>
 
-</div></div>
-    <aside id="sidebar" class="alignleft"><!-- 
-  
+
+<section id="comment">
+  <h1 class="title">Comments</h1>
 
   
-
-  
-<div class="widget twitter">
-  <h3 class="title">Tweets</h3>
-  <ul id="tweets"></ul>
-</div>
-
-<script type="text/javascript">
-var twitter_stream = ['thiagopnts', 5, false];
-var moment_js_path = '/js/moment.min.js';
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
-<script src="/js/twitter.js"></script>
 
+<div class="fb-comments" data-href="http://pppigboat.github.io/2014/05/19/hello-world/" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+      
+  
+</section>
 
- -->
-<div class="personal-info">
-  <figure>
-    
-    <figcaption>
-      <h3 class=>SpringZ</h3>
-      <p>专注的做一件事，并把它做好</p>
-    </figcaption>
-  </figure>
-  <section class="social">
-    
-      <a target="_blank" class="icon twitter depth" href="http://twitter.com/thiagopnts"></a>
-    
-    
-      <a target="_blank" class="icon facebook depth" href="http://fb.com/your facebook url"></a> 
-    
-    
-      <a target="_blank" class="icon github depth" href="http://github.com/pppigboat"></a>
-    
-    
-      <a target="_blank" class="icon email depth" href="mailto:zhangquan03@gmail.com"></a>
-    
-  </section>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:pppigboat.github.io">
+  </form>
 </div>
+
+  
+
+  
 </aside>
     <div class="clearfix"></div>
   </div>
-  <footer id="footer" class="inner"><div class="alignright depth">
-  <a href="http://github.com/thiagopnts/hexo-persona-dark" style="text-decoration: underline;">Persona Dark Theme</a> 
-  &copy; - 2014 SpringZ
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 SpringZ
   
 </div>
 <div class="clearfix"></div></footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
 

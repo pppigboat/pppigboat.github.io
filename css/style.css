@@ -5,16 +5,12 @@
   font-weight: normal;
   src: url("font/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("font/fontawesome-webfont.woff") format('woff'), url("font/fontawesome-webfont.ttf") format('truetype'), url("font/fontawesome-webfont.svg#FontAwesomeRegular") format('svg');
 }
-.depth {
-  color: #444;
-  text-shadow: 0px 2px 3px rgba(3,3,3,0.5);
-}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background: #1f1f1f;
+  background: #eee;
   color: #444;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
@@ -28,7 +24,6 @@ body {
 @media screen and (max-width: 600px) {
   body {
     font-size: 13px;
-    margin: 0 10px;
   }
 }
 h1,
@@ -50,7 +45,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #444;
+  color: #258fb8;
 }
 a:hover {
   text-decoration: underline;
@@ -83,7 +78,6 @@ a:hover {
 }
 #main-col {
   width: 900px;
-  overflow: auto;
 }
 @media screen and (max-width: 1260px) {
   #main-col {
@@ -115,7 +109,7 @@ a:hover {
   color: #999;
 }
 #header a:hover {
-  color: #444;
+  color: #258fb8;
   text-decoration: none;
 }
 #header h1 {
@@ -140,13 +134,13 @@ a:hover {
   float: left;
   margin-left: 30px;
 }
+article {
+  -webkit-box-shadow: 1px 2px 3px #ddd;
+  box-shadow: 1px 2px 3px #ddd;
+  background: #fff;
+}
 article.page {
   padding-left: 20px;
-}
-@media screen and (max-width: 600px) {
-  article.page {
-    padding-left: 10px;
-  }
 }
 article.page .icon {
   display: none;
@@ -167,21 +161,14 @@ article.link .title a:after {
   padding-left: 10px;
   vertical-align: super;
 }
-article .time {
-  position: relative;
-  font-size: 1.2em;
-  display: inline;
-  top: 5px;
-  float: right;
-}
 article .post-content {
-  padding: 10px 10px 10px 67px;
+  padding: 20px 20px 15px 77px;
   margin-bottom: 50px;
   position: relative;
 }
 @media screen and (max-width: 600px) {
   article .post-content {
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
 article .gallery {
@@ -248,17 +235,13 @@ article .gallery .next:before {
   right: 10px;
 }
 article header .icon {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
   margin-right: 25px;
   position: absolute;
-  top: 16px;
+  top: 20px;
   left: 20px;
-  color: #469632;
-}
-article header .icon:hover {
-  color: #444;
-  text-decoration: none;
+  color: #258fb8;
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -267,7 +250,7 @@ article header .icon:hover {
 }
 article header .icon:before {
   position: absolute;
-  font: 25px FontAwesome;
+  font: 32px FontAwesome;
   top: 0;
   left: 0;
   width: 32px;
@@ -282,20 +265,17 @@ article header time {
 }
 article header .title {
   font-weight: normal;
-  display: inline;
-  color: #469632;
 }
 article header .title a {
-  color: #469632;
+  color: #444;
 }
 article header .title a:hover {
-  color: #444;
+  color: #258fb8;
   text-decoration: none;
 }
 article .entry {
   text-align: justify;
   line-height: 1.6;
-  font-size: 1.3em;
 }
 article .entry p,
 article .entry blockquote,
@@ -312,12 +292,12 @@ article .entry .video-container {
   margin-top: 15px;
 }
 article .entry blockquote {
-  border-top: 1px solid #292929;
-  border-bottom: 1px solid #292929;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   font-style: italic;
   font-family: "Georgia", serif;
   font-size: 1.2em;
-  padding: 0 20px 15px;
+  padding: 0 30px 15px;
   text-align: center;
 }
 article .entry blockquote footer {
@@ -342,13 +322,13 @@ article .entry code {
   padding: 0 5px;
   margin: 0 2px;
   font-size: 0.9em;
-  border: 1px solid #292929;
+  border: 1px solid #ddd;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 article .entry pre {
   background: #eee;
-  border: 1px solid #292929;
+  border: 1px solid #ddd;
   margin-top: 15px;
   overflow: auto;
   padding: 7px 15px;
@@ -382,7 +362,7 @@ article .entry dl dl {
 article .entry h1,
 article .entry h2 {
   font-weight: normal;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
   margin-top: 20px;
 }
@@ -443,13 +423,10 @@ article .entry .pullquote {
   width: 45%;
   font-size: 1.5em;
 }
-article .entry img {
-  width: 100%;
-}
 article footer {
   margin-top: 15px;
   padding-top: 10px;
-  border-top: 1px solid #292929;
+  border-top: 1px solid #ddd;
   color: #999;
   font-size: 0.9em;
   line-height: 16px;
@@ -460,7 +437,7 @@ article footer a {
   color: #999;
 }
 article footer a:hover {
-  color: #444;
+  color: #258fb8;
   text-decoration: none;
 }
 article footer a:before {
@@ -515,14 +492,14 @@ article footer .addthis iframe {
 #pagination a {
   display: block;
   padding: 5px 10px;
-  background: #292929;
-  color: #469632;
+  background: #ddd;
+  color: #999;
   font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-shadow: 0 0 2px #333;
+  text-shadow: 0 0 1px #fff;
   margin-bottom: 50px;
 }
 #pagination a:hover {
-  background: #469632;
+  background: #258fb8;
   color: #fff;
   text-decoration: none;
   text-shadow: none;
@@ -555,8 +532,10 @@ article footer .addthis iframe {
   content: '\f07b';
 }
 .archive {
-  border-bottom: 1px solid #292929;
-  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 2px 3px #ddd;
+  box-shadow: 1px 2px 3px #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
 }
 .archive article {
   -webkit-box-shadow: none;
@@ -566,77 +545,14 @@ article footer .addthis iframe {
   margin-bottom: 0;
 }
 #sidebar {
-  width: 0;
+  width: 270px;
   line-height: 1.8em;
-  position: fixed;
-  right: 70%;
-  top: 0;
-  left: 0px;
-  border-right: solid 1px #2d2d2d;
-  height: 100%;
-  background-color: #1f1f1f;
-  background: -webkit-linear-gradient(top, #1f1f1f, #222);
-  background: -moz-linear-gradient(top, #1f1f1f, #222);
-  background: -o-linear-gradient(top, #1f1f1f, #222);
-  background: -ms-linear-gradient(top, #1f1f1f, #222);
-  background: linear-gradient(to bottom, #1f1f1f, #222);
-  -webkit-box-shadow: 1px 0 0 0 #222;
-  box-shadow: 1px 0 0 0 #222;
 }
 @media screen and (max-width: 900px) {
   #sidebar {
-    display: none;
+    float: none;
+    width: 100%;
   }
-}
-#sidebar .personal-info {
-  color: #469632;
-  position: relative;
-  text-align: center;
-  top: 5%;
-  display: none;
-  margin: 0 auto;
-  max-width: 30%;
-}
-#sidebar .personal-info figure {
-  border-bottom: solid 1px #001;
-}
-#sidebar .social {
-  border-top: solid 1px #2d2d2d;
-  width: 200px;
-}
-#sidebar .personal-photo {
-  -webkit-border-radius: 150px;
-  border-radius: 150px;
-  height: 170px;
-  width: 170px;
-}
-#sidebar .personal-name {
-  font-size: 1.5em;
-}
-#sidebar .icon {
-  position: relative;
-  font: 1.1em FontAwesome;
-  margin: 0 auto;
-  padding: 10px;
-  top: 25px;
-  text-decoration: none;
-  color: #444;
-  font-size: 30px;
-}
-#sidebar .icon:hover {
-  color: #469632;
-}
-#sidebar .github:before {
-  content: "\f09b";
-}
-#sidebar .facebook:before {
-  content: "\f082";
-}
-#sidebar .twitter:before {
-  content: "\f081";
-}
-#sidebar .email:before {
-  content: "\f0e0";
 }
 #sidebar .widget {
   background: #fff;
@@ -648,7 +564,7 @@ article footer .addthis iframe {
 #sidebar .widget .title {
   padding: 15px 20px;
   font-size: 1em;
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #ddd;
   font-weight: normal;
 }
 #sidebar .widget .entry {
@@ -681,7 +597,7 @@ article footer .addthis iframe {
   font-style: italic;
   font-size: 1em;
   padding: 10px 15px;
-  border: 1px solid #292929;
+  border: 1px solid #ddd;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -702,7 +618,7 @@ article footer .addthis iframe {
   content: ')';
 }
 #sidebar .twitter li {
-  border-bottom: 1px solid #292929;
+  border-bottom: 1px solid #ddd;
   padding: 15px 20px;
   font-size: 0.9em;
 }
@@ -730,7 +646,7 @@ article footer .addthis iframe {
 }
 .entry .gist {
   background: #eee;
-  border: 1px solid #292929;
+  border: 1px solid #ddd;
   margin-top: 15px;
   padding: 7px 15px;
   -webkit-border-radius: 2px;
@@ -763,14 +679,14 @@ article footer .addthis iframe {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #444;
+  color: #258fb8;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #444;
+  color: #258fb8;
 }
 figure.highlight {
   background: #eee;
-  border: 1px solid #292929;
+  border: 1px solid #ddd;
   margin-top: 15px;
   padding: 7px 15px;
   -webkit-border-radius: 2px;
@@ -802,7 +718,7 @@ figure.highlight table {
 figure.highlight .gutter {
   color: #999;
   padding-right: 15px;
-  border-right: 1px solid #292929;
+  border-right: 1px solid #ddd;
   text-align: right;
 }
 figure.highlight .code {
