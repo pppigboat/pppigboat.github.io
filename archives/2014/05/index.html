@@ -54,27 +54,41 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-05-24T02:39:45.000Z"><a href="/2014/05/24/安装goagentxmd/">May 24 2014</a></time>
+        <time datetime="2014-05-24T02:39:45.000Z"><a href="/2014/05/24/安装goagentx/">May 24 2014</a></time>
       
       
   
-    <h1 class="title"><a href="/2014/05/24/安装goagentxmd/">安装goagentx</a></h1>
+    <h1 class="title"><a href="/2014/05/24/安装goagentx/">安装goagentx</a></h1>
   
 
     </header>
     <div class="entry">
       
-        <h3 id="选一个编译文件夹，执行命令">选一个编译文件夹，执行命令</h3>
+        <p>因为直接下载goagentx.dmg文件总是失败，因此采用下载源文件再进行编译的方式。</p>
+<h3 id="选一个编译文件夹，在shell下执行命令">选一个编译文件夹，在shell下执行命令</h3>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>git <span class="keyword">clone</span> https:<span class="comment">//github.com/ohdarling/GoAgentX</span>
+</pre></td></tr></table></figure>
+
+
+<p>但是这个是1.3.33版本的，可以在发布版的页面上找到发布版的源码下载。</p>
+<h3 id="执行git命令">执行git命令</h3>
+<p>切换到子目录GoAgentX下，执行命令</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre>1
 2
-3
-</pre></td><td class="code"><pre>git <span class="keyword">clone</span> https:<span class="comment">//github.com/ohdarling/GoAgentX</span>
-git submodule init
-git submodule update
+</pre></td><td class="code"><pre>git submodule init
+git submodule <span class="operator"><span class="keyword">update</span></span>
 </pre></td></tr></table></figure>
 
 
 <h3 id="打开xcode，打开项目GoAgentX-xcodeproj进行编译">打开xcode，打开项目GoAgentX.xcodeproj进行编译</h3>
+<p>Product -&gt; Build</p>
+<ul>
+<li>如果出现“identifier on osx version prior to…”，可以修改target的”deployment target“至较高的版本。</li>
+<li>如果出现<h3 id="在xcode中对产品打包">在xcode中对产品打包</h3>
+Product -&gt; Archive -&gt; Distribute</li>
+</ul>
+<p>至此，已生成相应的安装文件包。</p>
 
       
     </div>
