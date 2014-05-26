@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014 | SpringZ&#39;s Website</title>
+  <title>归档：2014 | SpringZ&#39;s Website</title>
   <meta name="author" content="SpringZ">
   
   <meta name="description" content="专心的做一件事，并把它做好">
@@ -17,8 +17,7 @@
   
     <meta property="og:image" content="undefined"/>
   
-
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
   <link rel="alternate" href="/atom.xml" title="SpringZ&#39;s Website" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -34,9 +33,13 @@
 <nav id="main-nav" class="alignright">
   <ul>
     
-      <li><a href="/">Home</a></li>
+      <li><a href="/">主页</a></li>
     
-      <li><a href="/archives">Archives</a></li>
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
     
   </ul>
   <div class="clearfix"></div>
@@ -47,451 +50,95 @@
 <h2 class="archive-title">2014</h2>
 
 
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-05-24T02:39:45.000Z"><a href="/2014/05/24/安装goagentx/">May 24 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/05/24/安装goagentx/">安装goagentx</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>因为直接下载goagentx.dmg文件总是失败，因此采用下载源文件再进行编译的方式。</p>
-<h3 id="选一个编译文件夹，在shell下执行命令">选一个编译文件夹，在shell下执行命令</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>git <span class="keyword">clone</span> https:<span class="comment">//github.com/ohdarling/GoAgentX</span>
-</pre></td></tr></table></figure>
-
-
-<p>但是这个是1.3.33版本的，可以在发布版的页面上找到发布版的源码下载。</p>
-<h3 id="执行git命令">执行git命令</h3>
-<p>切换到子目录GoAgentX下，执行命令</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>git submodule init
-git submodule <span class="operator"><span class="keyword">update</span></span>
-</pre></td></tr></table></figure>
-
-
-<h3 id="打开xcode，打开项目GoAgentX-xcodeproj进行编译">打开xcode，打开项目GoAgentX.xcodeproj进行编译</h3>
-<p>Product -&gt; Build</p>
-<ul>
-<li>如果出现“identifier on osx version prior to…”，可以修改target的”deployment target“至较高的版本。</li>
-<li>如果出现<h3 id="在xcode中对产品打包">在xcode中对产品打包</h3>
-Product -&gt; Archive -&gt; Distribute</li>
-</ul>
-<p>至此，已生成相应的安装文件包。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
+  <div class="archive">
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-05-24T02:39:45.000Z"><a href="/2014/05/24/安装goagentx/">5月 24 2014</a></time>
+            
+              <h1 class="title"><a href="/2014/05/24/安装goagentx/">安装goagentx</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-05-19T08:41:52.000Z"><a href="/2014/05/19/hexo配置说明/">5月 19 2014</a></time>
+            
+              <h1 class="title"><a href="/2014/05/19/hexo配置说明/">使用hexo和github来构建自己的blog</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2014-05-19T01:20:14.000Z"><a href="/2014/05/19/hello-world/">5月 19 2014</a></time>
+            
+              <h1 class="title"><a href="/2014/05/19/hello-world/">Hello World</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
   </div>
-</article>
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-05-19T08:41:52.000Z"><a href="/2014/05/19/hexo配置说明/">May 19 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/05/19/hexo配置说明/">使用hexo和github来构建自己的blog</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h2 id="基本步骤">基本步骤</h2>
-<p>1 安装hexo<br>2 申请配置github仓库<br>3 申请并绑定域名(可选)<br>4 撰写博客</p>
-<h2 id="安装hexo">安装hexo</h2>
-<h3 id="1,安装nodejs">1,安装nodejs</h3>
-<p>安装hexo，首先需要安装nodejs，从nodejs网站上下载node.pkg进行安装(mac)，如果是其他系统，进行相应的安装。</p>
-<h3 id="2,安装Hexo">2,安装Hexo</h3>
-<p>安装hexo只需要一个简单的命令:</p>
-<figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>~<span class="variable">$sudo</span> npm install <span class="attribute">-g</span> hexo
-</pre></td></tr></table></figure>
-
-
-<p>至此，hexo已经安装完毕，可以执行hexo的相关命令了。</p>
-<h3 id="3,准备网站目录并使用hexo进行初始化">3,准备网站目录并使用hexo进行初始化</h3>
-<p>在本地机器上准备一个文件目录，用于存放写blog的相关文件。例如：~/MyBlogs<br>将执行目录切换到该目录下并执行初始化命令</p>
-<figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> init
-</pre></td></tr></table></figure>
-
-
-<p>此时，该目录为hexo的工作目录，其下会自动生成若干个文件和目录。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="code"><pre>--_config.yml  
-<span class="string">|-db.json</span>
-<span class="string">|-package.json</span>
-<span class="string">|-scaffolds</span>
-<span class="string">|-scripts</span>
-<span class="string">|-source</span>
- <span class="string">|-_drafts</span>
- <span class="string">|-_posts</span>
-<span class="string">|-themes</span>
-</pre></td></tr></table></figure>
-
-
-<p>并在source/_posts/下自动建立一个helloworld.md文件。<br>其中，source/_posts/下保存的.md文件是我们自己用md写的blog文件。</p>
-<h3 id="4,生成helloworld博客">4,生成helloworld博客</h3>
-<p>hexo目录进行了初始化之后<br>在hexo的工作目录下执行博客生成命令</p>
-<figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> g
-</pre></td></tr></table></figure>
-
-
-<p>该命令用于将source/_posts/下的md文件根据_config.yml中的配置转换为构成blog所需要的html文件。如果是第一次执行该命令，会生成public目录，该目录保存转换后的html文件。</p>
-<h3 id="5,博客预览">5,博客预览</h3>
-<p>在hexo的工作目录下执行服务器运行命令</p>
-<figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> s
-</pre></td></tr></table></figure>
-
-
-<p>此时，在浏览其中输入<a href="http://localhost:4000" target="_blank">http://localhost:4000</a> 即可看到博客预览</p>
-<h3 id="6,添加新文件">6,添加新文件</h3>
-<p>在hexo的工作目录下执行服务器运行命令</p>
-<figure class="highlight Shell"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>~/MyBlogs<span class="variable">$hexo</span> <span class="keyword">new</span> myfilename
-</pre></td></tr></table></figure>
-
-
-<p>则在目录~/MyBlogs/source/_posts下生成名为myfilename.md的文件。编辑该文件即可。</p>
-<h3 id="7,添加主题">7,添加主题</h3>
-<p><a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">https://github.com/tommy351/hexo/wiki/Themes</a><br>目录下列出了各种主题及安装方法，安装后，更改_config.yml文件中的theme选项值(注意”:”后有一个半角空格)。</p>
-<h2 id="申请配置github仓库">申请配置github仓库</h2>
-<h3 id="1,注册用户">1,注册用户</h3>
-<h3 id="2,构建仓库">2,构建仓库</h3>
-<h3 id="3,生成SSH-key">3,生成SSH-key</h3>
-<h3 id="4,网站部署">4,网站部署</h3>
-<h2 id="申请并绑定域名">申请并绑定域名</h2>
-<h3 id="1,申请域名">1,申请域名</h3>
-<h3 id="2,修改命名服务器">2,修改命名服务器</h3>
-<h3 id="3,绑定域名">3,绑定域名</h3>
-<h2 id="撰写博客">撰写博客</h2>
-<p>在_post目录下建立.md文件，就可以使用markdown语言来撰写博客了</p>
-<h2 id="附录1：hexo主题">附录1：hexo主题</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Themes</th>
-<th style="text-align:left">description</th>
-<th style="text-align:left">Install Commands</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Landscape</td>
-<td style="text-align:left">Hexo2.4+默认主题</td>
-<td style="text-align:left">—</td>
-</tr>
-<tr>
-<td style="text-align:left">Light</td>
-<td style="text-align:left">历史版本Hexo的默认主题</td>
-<td style="text-align:left">git clone git://github.com/tommy351/hexo-theme-light.git themes/light</td>
-</tr>
-<tr>
-<td style="text-align:left">Phase</td>
-<td style="text-align:left">最漂亮的Hexo主题</td>
-<td style="text-align:left">git clone git://github.com/tommy351/hexo-theme-phase.git themes/phase</td>
-</tr>
-<tr>
-<td style="text-align:left">Memoir</td>
-<td style="text-align:left">一个简单的Hexo主题</td>
-<td style="text-align:left">git clone git://github.com/yhben/hexo-theme-memoir.git themes/memoir</td>
-</tr>
-<tr>
-<td style="text-align:left">Persona Dark</td>
-<td style="text-align:left">基于Light的漂亮的深色主题</td>
-<td style="text-align:left">git clone git://github.com/thiagopnts/hexo-persona-dark.git themes/persona-dark</td>
-</tr>
-<tr>
-<td style="text-align:left">Pithiness</td>
-<td style="text-align:left">支持fancybox的主题</td>
-<td style="text-align:left">git clone git://github.com/okoala/hexo-theme-pithiness.git themes/pitiness</td>
-</tr>
-<tr>
-<td style="text-align:left">paperbox</td>
-<td style="text-align:left">基于Light的纸张式主题</td>
-<td style="text-align:left">git clone git://github.com/sun11/hexo-theme-paperbox.git themes/paperbox</td>
-</tr>
-<tr>
-<td style="text-align:left">DamnClean</td>
-<td style="text-align:left">基于Light的轻量主题</td>
-<td style="text-align:left">git clone git://github.com/shulhi/hexo-theme-damnclean.git thems/damnclean</td>
-</tr>
-<tr>
-<td style="text-align:left">Modernist</td>
-<td style="text-align:left">简单的支持fancybox的主题，增加多说评论插件</td>
-<td style="text-align:left">git clone git://github.com/heroicyang/hexo-theme-modernist.git themes/modernist</td>
-</tr>
-<tr>
-<td style="text-align:left">Perry</td>
-<td style="text-align:left">轻量主题，单列</td>
-<td style="text-align:left">git clone git://github.com/cinvro/hexo-theme-perry.git themes/perry</td>
-</tr>
-<tr>
-<td style="text-align:left">flat</td>
-<td style="text-align:left">基于Light的简单主题</td>
-<td style="text-align:left">git clone git://github.com/reee/hexo-theme-flat themes/flat</td>
-</tr>
-<tr>
-<td style="text-align:left">pacman</td>
-<td style="text-align:left">响应式的主题</td>
-<td style="text-align:left">git clone git://github.com/A-limon/pacman.git themes/pacman</td>
-</tr>
-<tr>
-<td style="text-align:left">pacmanhover</td>
-<td style="text-align:left">基于pacman改变颜色并添加浮动效果</td>
-<td style="text-align:left">git clone <a href="https://github.com/uruir/pacmanhover.git" target="_blank">https://github.com/uruir/pacmanhover.git</a> themes/pacmanhover</td>
-</tr>
-<tr>
-<td style="text-align:left">pacmanblue</td>
-<td style="text-align:left">基于pacman的深蓝主题</td>
-<td style="text-align:left">git clone git://github.com/youfei/pacmanBlue.git themes/pacmanBlue</td>
-</tr>
-<tr>
-<td style="text-align:left">Greyshade</td>
-<td style="text-align:left">模仿Octopress的Greyshade和主题</td>
-<td style="text-align:left"><em>npm i hexo-theme-greyshade;ln -s node_modules/hexo-theme-greyshade theme/greyshade</em></td>
-</tr>
-<tr>
-<td style="text-align:left">Sagi</td>
-<td style="text-align:left">另一款Hexo主题</td>
-<td style="text-align:left">git clone git://github.com/xinlinqi/hexo-theme-sagi.git themes/sagi</td>
-</tr>
-<tr>
-<td style="text-align:left">Raytaylorism</td>
-<td style="text-align:left">alpha效果的主题</td>
-<td style="text-align:left">git clone git://github.com/raytaylorlin/hexo-theme-raytaylorism.git themes/raytaylorlin</td>
-</tr>
-<tr>
-<td style="text-align:left">tyrant</td>
-<td style="text-align:left">基于Light的简单主题</td>
-<td style="text-align:left">git clone git://github.com/acgtyrant/hexo-theme-tyrant.git themes/tyrant</td>
-</tr>
-<tr>
-<td style="text-align:left">MoHexo</td>
-<td style="text-align:left">基于bootstrap的主题</td>
-<td style="text-align:left">git clone git://github.com/moyuqi/hexo-theme-MoHexo.git themes/mohexo</td>
-</tr>
-<tr>
-<td style="text-align:left">writing</td>
-<td style="text-align:left">基于Light的简单主题</td>
-<td style="text-align:left">git@github.com:yunlzheng/hexo-themes.git themes/writing;git checkout release/writing</td>
-</tr>
-<tr>
-<td style="text-align:left">Striped</td>
-<td style="text-align:left">html5/css3/响应式主题</td>
-<td style="text-align:left">git clone git://github.com/battlemidget/hexo-theme-striped.git themes/striped</td>
-</tr>
-<tr>
-<td style="text-align:left">winterlan</td>
-<td style="text-align:left">基于Light的有动态页面的主题</td>
-<td style="text-align:left">git clone git://github.com/winterland1989/hexo-theme-winterland.git themes/winterland</td>
-</tr>
-<tr>
-<td style="text-align:left">Coolblue</td>
-<td style="text-align:left">模仿Styleshout’s的Coolblue的主题</td>
-<td style="text-align:left">git clone git://github.com/battlemidget/hexo-theme-coolblue.git themes/coolblue</td>
-</tr>
-<tr>
-<td style="text-align:left">mame</td>
-<td style="text-align:left">另一款轻量级主题</td>
-<td style="text-align:left">git clone git://github.com/chadluo/hexo-theme-mame.git themes/mame</td>
-</tr>
-<tr>
-<td style="text-align:left">forked mame</td>
-<td style="text-align:left">mame的一个修改版本</td>
-<td style="text-align:left">git clone git://github.com/rwxes/hexo-theme-mame.git themes/mame</td>
-</tr>
-<tr>
-<td style="text-align:left">sidebar</td>
-<td style="text-align:left">基于Light的一个简单主题</td>
-<td style="text-align:left">git clone git://github.com/hardywu/hexo-theme-sidebar.git themes/sidebar</td>
-</tr>
-<tr>
-<td style="text-align:left">iOS7</td>
-<td style="text-align:left">一个ios7风格的主题</td>
-<td style="text-align:left">git clone git://github.com/tracy-e/hexo-theme-iOS7.git themes/ios7</td>
-</tr>
-<tr>
-<td style="text-align:left">chenall</td>
-<td style="text-align:left">一个模块化的HEXO主题，多功能</td>
-<td style="text-align:left">git clone git://github.com/chenall/hexo-theme-chenall.git themes/chenall</td>
-</tr>
-<tr>
-<td style="text-align:left">hexo-jade-barebone</td>
-<td style="text-align:left">使用Jade和Less实现的Barebone主题</td>
-<td style="text-align:left">git clone git://github.com/widatama/hexo-jade-barebone.git themes/jade-barebone</td>
-</tr>
-<tr>
-<td style="text-align:left">biture</td>
-<td style="text-align:left">单列的widget-less,PURE.css的轻量主题</td>
-<td style="text-align:left">git clone git://github.com/kywk/hexo-theme-biture.git themes/biture</td>
-</tr>
-<tr>
-<td style="text-align:left">casper</td>
-<td style="text-align:left">模仿Ghost Casper的主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">AWE</td>
-<td style="text-align:left">夸张的，基于AWE的主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Cover</td>
-<td style="text-align:left">基于writing的，类facebook的主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">nut</td>
-<td style="text-align:left">基于Landscape和Bootstrap的主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Strict</td>
-<td style="text-align:left">轻量级的响应主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Jacman</td>
-<td style="text-align:left">基于pacman的简单主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Noderce</td>
-<td style="text-align:left">另一款hexo主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Freemind</td>
-<td style="text-align:left">基于bootstrap的主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Redirect</td>
-<td style="text-align:left">可以生成301重定向页面的主题，用于站点迁移</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">Ragingcat</td>
-<td style="text-align:left">基于pacman的主题</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">daisy</td>
-<td style="text-align:left">一个简洁的有情调的hexo模板，基于Noderce</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-05-19T01:20:14.000Z"><a href="/2014/05/19/hello-world/">May 19 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/05/19/hello-world/">Hello World</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="http://hexo.io" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs" target="_blank">documentation</a> to learn how to use.</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
-
-  <nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav>
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="search" name="q" results="0" placeholder="搜索">
     <input type="hidden" name="q" value="site:pppigboat.github.io">
   </form>
 </div>
 
-  
+  <div class="widget aboutme">
+  <h3 class="title">关于我</h3>
+  <div class="entry">
+这里写我的说明
+  </div>
+</div>
+
+
 
   
 <div class="widget tag">
-  <h3 class="title">Tags</h3>
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HelloWorld/">HelloWorld</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
   <ul class="entry">
   
     <li><a href="/tags/hexo 配置/">hexo 配置</a><small>1</small></li>
   
   </ul>
 </div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/hexo 配置/" style="font-size: NaNpx;">hexo 配置</a>
+  </div>
+</div>
+
+
+  <div><iframe width="100%" height="350" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=350&fansRow=1&ptype=0&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1403206433&verifier=a65e11f7&dpc=1"></iframe></div>
 
 </aside>
     <div class="clearfix"></div>
